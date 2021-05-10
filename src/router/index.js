@@ -9,16 +9,19 @@ const routes = [{
   redirect: '/home'
 }, {
   path: '/home',
-  component: () => import('../views/home/Home')
+  component: () => import('views/home/Home')
 }, {
   path: '/category',
-  component: () => import('../views/category/Category')
+  component: () => import('views/category/Category')
 }, {
   path: '/cart',
-  component: () => import('../views/cart/Cart')
+  component: () => import('views/cart/Cart')
 }, {
   path: '/profile',
-  component: () => import('../views/profile/Profile')
+  component: () => import('views/profile/Profile')
+}, {
+  path: '/details',
+  component: () => import('views/details/Details')
 }]
 
 const router = new VueRouter({
